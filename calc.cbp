@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="calc" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/calc" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics-s-d" />
+					<Add library="sfml-window-s-d" />
+					<Add library="sfml-system-s-d" />
+					<Add library="opengl32" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add library="jpeg" />
+					<Add library="freetype" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/calc" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics-s" />
+					<Add library="sfml-window-s" />
+					<Add library="sfml-system-s" />
+					<Add library="opengl32" />
+					<Add library="winmm" />
+					<Add library="gdi32" />
+					<Add library="jpeg" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++14" />
+			<Add option="-fexceptions" />
+			<Add option="-DSFML_STATIC" />
+			<Add directory="C:/Users/Keegan/Desktop/c/SFML-2.4.2/include" />
+			<Add directory="C:/Users/Keegan/Desktop/c/SFML-2.4.2/include/SFML" />
+		</Compiler>
+		<Linker>
+			<Add option="-lstdc++" />
+			<Add directory="C:/Users/Keegan/Desktop/c/SFML-2.4.2/lib" />
+			<Add directory="C:/Users/Keegan/Desktop/c/SFML-2.4.2/bin" />
+		</Linker>
+		<Unit filename="Bttn.cpp" />
+		<Unit filename="Bttn.h" />
+		<Unit filename="Converter.cpp" />
+		<Unit filename="Converter.h" />
+		<Unit filename="Win.cpp" />
+		<Unit filename="Win.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
